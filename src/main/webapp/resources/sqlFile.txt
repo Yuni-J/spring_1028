@@ -1,0 +1,22 @@
+-- 2024.10.28
+
+-- user 생성
+create user 'springUser'@'localhost' identified by 'mysql';
+-- database 생성
+create database springdb;
+-- 권한 부여
+grant all privileges on springdb.* to 'springUser'@'localhost' with grant option;
+-- 권한 설정 메모리반영
+flush privileges;
+
+use springdb;
+
+create table board(
+bno int auto_increment,
+title varchar(200) not null,
+writer varchar(100) not null,
+content text,
+isDel varchar(10) default 'N',
+regDate datetime default now(),
+modDate datetime default now(),
+primary key(bno));
