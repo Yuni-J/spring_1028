@@ -32,9 +32,8 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-
+		
 		return "index";
-		//    /WEB-INF/views/index.jsp 자동설정 (servlet-context.xml 설정으로)
 	}
 	
 }

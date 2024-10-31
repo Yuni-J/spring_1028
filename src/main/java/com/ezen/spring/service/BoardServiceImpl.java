@@ -3,7 +3,6 @@ package com.ezen.spring.service;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
 
 import com.ezen.spring.dao.BoardDAO;
 import com.ezen.spring.domain.BoardVO;
@@ -24,13 +23,11 @@ public class BoardServiceImpl implements BoardService {
 		return bdao.register(bvo);
 	}
 
-
 	@Override
 	public List<BoardVO> getList() {
 		// TODO Auto-generated method stub
 		return bdao.getList();
 	}
-
 
 	@Override
 	public BoardVO getDetail(int bno) {
@@ -38,17 +35,4 @@ public class BoardServiceImpl implements BoardService {
 		return bdao.getDetail(bno);
 	}
 
-
-	@Override
-	public int update(BoardVO bvo) {
-		// TODO Auto-generated method stub
-		return bdao.update(bvo);
-	}
-
-
-	@Override
-	public int delete(BoardVO bvo) {
-		// TODO Auto-generated method stub
-		return bdao.delete(bvo);
-	}
 }

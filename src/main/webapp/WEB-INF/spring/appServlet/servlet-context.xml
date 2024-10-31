@@ -21,13 +21,11 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.ezen.spring" />
-	
-	<!-- HTTP 상태 404-찾을수 없음 -->
-	<!-- <context:component-scan base-package="com.ezen.spring.controller" />
+	<context:component-scan base-package="com.ezen.spring.controller" />
 	<context:component-scan base-package="com.ezen.spring.service" />
 	<context:component-scan base-package="com.ezen.spring.handler" />
-	<context:component-scan base-package="com.ezen.spring.dao" /> -->
+	<context:component-scan base-package="com.ezen.spring.dao" />
+	
 	
 	
 </beans:beans>

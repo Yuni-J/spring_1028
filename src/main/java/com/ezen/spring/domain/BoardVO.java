@@ -12,7 +12,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class BoardVO {
-	
+
 	private int bno;
 	private String title;
 	private String writer;
@@ -21,5 +21,4 @@ public class BoardVO {
 	private String regDate;
 	private String modDate;
 	
-
 }
